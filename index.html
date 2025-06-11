@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>งานแต่งงาน - [ชื่อคู่บ่าวสาว]</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero-section relative">
+    <div class="overlay absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="hero-content relative z-10 flex justify-center items-center h-48 sm:h-64 md:h-72">
+      <h1 class="text-white text-3xl sm:text-4xl md:text-5xl font-semibold">preset5 - wedding</h1>
+    </div>
+  </header>
+
+<div class="flex justify-end px-4 gap-4 mt-4">
+  <div class="display-button mb-4">
+  <button
+    id="btn-display-button"
+    class="flex flex-col items-center text-sm text-[#b57149] bg-white/70 hover:bg-white/50 px-4 py-2 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-200"
+    aria-pressed="false"
+    aria-label="Toggle Display"
+    type="button"
+  >
+    <span id="btn-display">Display</span>
+  </button>
+</div>
+
+
+  <div class="relative dropdown" data-test="gallery-language-selection">
+    <button
+      id="languageToggle"
+      class="flex flex-col items-center text-sm text-[#b57149] bg-white/70 hover:bg-white/50 px-4 py-2 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-200"
+      aria-haspopup="true"
+      aria-expanded="false"
+      aria-controls="languageMenu"
+      type="button"
+    >
+      <span id="language-label"> A/ก Language</span>
+    </button>
+    <ul
+      id="languageMenu"
+      class="dropdown-menu absolute right-0 mt-2 w-32 rounded bg-white text-black shadow-lg z-10 hidden"
+      role="menu"
+      aria-labelledby="languageToggle"
+    >
+      <li><a href="#" class="block px-4 py-2 hover:bg-gray-200 rounded-t">ไทย</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Eng</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">中文</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-gray-200 rounded-b">ລາວ</a></li>
+    </ul>
+  </div>
+</div>
+
+
+  <footer>
+    <!-- Gallery Section -->
+    <div class="relative py-8 px-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <!-- Image 1 -->
+        <div class="image-item relative group">
+          <a href="gallery.html?index=0">
+            <img
+              src="https://www.modernweddingphuket.com/wp-content/uploads/2023/02/294310759_5530463487012130_3902363932723983952_n-min.jpeg"
+              class="gallery-image w-full h-60 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+              alt=""
+            />
+          </a>
+          <a
+            href="https://www.modernweddingphuket.com/wp-content/uploads/2023/02/294310759_5530463487012130_3902363932723983952_n-min.jpeg"
+            download
+            class="download-btn absolute bottom-2 right-2 bg-black bg-opacity-50 px-2 py-1 rounded text-white text-sm"
+            aria-label="Download image 1"
+            >⬇</a
+          >
+        </div>
+
+        <!-- Image 2 -->
+        <div class="image-item relative group">
+          <a href="gallery.html?index=1">
+            <img
+              src="https://png.pngtree.com/thumb_back/fw800/background/20240421/pngtree-a-bride-and-groom-walking-through-a-field-at-sunset-image_15718059.jpg"
+              alt="ทะเลสาบ"
+              class="gallery-image w-full h-60 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="https://png.pngtree.com/thumb_back/fw800/background/20240421/pngtree-a-bride-and-groom-walking-through-a-field-at-sunset-image_15718059.jpg"
+            download
+            class="download-btn absolute bottom-3 right-3 bg-black bg-opacity-50 px-2 py-1 rounded text-white text-sm"
+            aria-label="Download image 2"
+            >⬇</a
+          >
+        </div>
+
+        <!-- Image 3 -->
+        <div class="image-item relative group">
+          <a href="gallery.html?index=2">
+            <img
+              src="https://f.ptcdn.info/751/052/000/otv11ghno9yKgj0wKnu-o.jpg"
+              alt="ทุ่งดอกไม้"
+              class="gallery-image w-full h-60 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="https://f.ptcdn.info/751/052/000/otv11ghno9yKgj0wKnu-o.jpg"
+            download
+            class="download-btn absolute bottom-3 right-3 bg-black bg-opacity-50 px-2 py-1 rounded text-white text-sm"
+            aria-label="Download image 3"
+            >⬇</a
+          >
+        </div>
+
+        <!-- Image 4 -->
+        <div class="image-item relative group">
+          <a href="gallery.html?index=3">
+            <img
+              src="https://cdn.prod.website-files.com/6106314c62f2bf965f2780eb/6212697edbf70d643d6cf349_2.png"
+              alt="ชายหาด"
+              class="gallery-image w-full h-60 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="https://cdn.prod.website-files.com/6106314c62f2bf965f2780eb/6212697edbf70d643d6cf349_2.png"
+            download
+            class="download-btn absolute bottom-3 right-3 bg-black bg-opacity-50 px-2 py-1 rounded text-white text-sm"
+            aria-label="Download image 4"
+            >⬇</a
+          >
+        </div>
+
+        <!-- Image 5 -->
+        <div class="image-item relative group">
+          <a href="gallery.html?index=4">
+            <img
+              src="https://img.sabuywedding.com/stories/578eebf9597f10921cfa3522/cover.jpg?width=720"
+              alt="คลื่นทะเล"
+              class="gallery-image w-full h-60 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="https://img.sabuywedding.com/stories/578eebf9597f10921cfa3522/cover.jpg?width=720"
+            download
+            class="download-btn absolute bottom-3 right-3 bg-black bg-opacity-50 px-2 py-1 rounded text-white text-sm"
+            aria-label="Download image 5"
+            >⬇</a
+          >
+        </div>
+
+        <!-- Image 6 -->
+        <div class="image-item relative group">
+          <a href="gallery.html?index=5">
+            <img
+              src="https://www.lemon8-app.com/seo/image?item_id=7358707837939253777&index=0&sign=1d42f10430aa5cdd8f814bc5d81d5be2"
+              alt="ป่าไม้"
+              class="gallery-image w-full h-60 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="https://www.lemon8-app.com/seo/image?item_id=7358707837939253777&index=0&sign=1d42f10430aa5cdd8f814bc5d81d5be2"
+            download
+            class="download-btn absolute bottom-3 right-3 bg-black bg-opacity-50 px-2 py-1 rounded text-white text-sm"
+            aria-label="Download image 6"
+            >⬇</a
+          >
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="bottom-menu fixed bottom-0 left-1/2 transform -translate-x-1/2 bg-gray-800 px-3 py-2 flex flex-wrap justify-center gap-2 sm:gap-3 rounded-t-lg shadow-lg z-50 w-80 max-w-md">
+
+  <!-- Send Link -->
+  <button class="button flex flex-col items-center text-[10px] sm:text-xs max-w-[56px] sm:max-w-[70px] text-white" aria-label="Send Link">
+    <svg class="icon line-icon w-5 h-5 sm:w-6 sm:h-6 mb-1" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M20 2H4a2 2 0 0 0-2 2v16l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM6 11h12v2H6v-2zm0-3h12v2H6V8z" />
+    </svg>
+    <span id="btn-send">Send Link</span>
+  </button>
+
+  <!-- Share -->
+  <button class="button flex flex-col items-center text-[10px] sm:text-xs max-w-[56px] sm:max-w-[70px] text-white" aria-label="Share">
+    <svg class="icon line-icon w-5 h-5 sm:w-6 sm:h-6 mb-1" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M14 16V13C10.39 13 7.81 14.43 6 17C6.72 13.33 8.94 9.73 14 9V6L19 11L14 16Z" />
+    </svg>
+    <span id="btn-share">Share</span>
+  </button>
+
+  <!-- QR Code -->
+  <button class="button flex flex-col items-center text-[10px] sm:text-xs max-w-[56px] sm:max-w-[70px] text-white" aria-label="QR Code">
+    <svg class="icon line-icon w-5 h-5 sm:w-6 sm:h-6 mb-1" fill="currentColor" viewBox="0 0 24 24">
+      <rect x="2" y="2" width="6" height="6" />
+      <rect x="16" y="2" width="6" height="6" />
+      <rect x="2" y="16" width="6" height="6" />
+      <rect x="4" y="4" width="2" height="2" fill="white" />
+      <rect x="18" y="4" width="2" height="2" fill="white" />
+      <rect x="4" y="18" width="2" height="2" fill="white" />
+      <rect x="10" y="2" width="4" height="4" />
+      <rect x="10" y="8" width="4" height="4" />
+      <rect x="10" y="14" width="4" height="4" />
+      <rect x="16" y="10" width="4" height="4" />
+      <rect x="2" y="10" width="4" height="4" />
+    </svg>
+    <span id="btn-qr">QR Code</span>
+  </button>
+
+  <!-- Select Image -->
+ <button id="btn-image-select" class="button flex flex-col items-center text-[10px] sm:text-xs max-w-[56px] sm:max-w-[70px] text-white" aria-label="Select Image">
+  <svg class="icon line-icon w-5 h-5 sm:w-6 sm:h-6 mb-1" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1z" />
+    <path d="M20 5H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 16H8V7h12v14z" />
+  </svg>
+  <span id="btn-image">Select Image</span>
+</button>
+</div>
+    <div
+        class="fixed bottom-4 left-4 flex flex-col items-center space-y-4 z-50 sm:bottom-6"
+        role="region"
+        aria-label="Social media links"
+      >
+        <!-- ปุ่ม Toggle -->
+        <button
+          id="toggleButton"
+          class="icon-button p-2 bg-blue-600 rounded-full shadow-md hover:bg-blue-700 focus:outline-none"
+          aria-expanded="false"
+          aria-controls="socialIcons"
+          aria-label="Toggle social icons"
+          title="Toggle social icons"
+          type="button"
+        >
+          <svg
+            class="w-5 h-5 sm:w-6 sm:h-6 fill-white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+          
+            <path
+                d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z"
+              />
+          </svg>
+        </button>
+
+        <!-- ไอคอน Social -->
+        <div
+        id="socialIcons"
+        class="absolute bottom-full mb-4 flex flex-col gap-2 opacity-0 pointer-events-none transition-all duration-300"
+        aria-hidden="true"
+      >
+        <a href="https://www.facebook.com" class="icon-button p-2 bg-blue-500 rounded-full shadow-md hover:bg-blue-600">
+          <svg
+            class="w-4 h-4 sm:w-6 sm:h-6 fill-white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M22.675 0H1.325C.594 0 0 .593 0 1.326v21.348C0 23.406.594 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.099 2.794.143v3.24l-1.917.001c-1.504 0-1.796.716-1.796 1.766v2.317h3.588l-.467 3.622h-3.121V24h6.116c.73 0 1.324-.594 1.324-1.326V1.326C24 .594 23.406 0 22.675 0z"
+            />
+          </svg>
+        </a>
+
+        <a href="https://www.tiktok.com" class="icon-button p-2 bg-black rounded-full shadow-md hover:bg-gray-800" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-white" viewBox="0 0 48 48">
+          <path d="M41,14.37c-2.74,0-5.23-1.1-7.05-2.9c-1.82-1.82-2.91-4.31-2.91-7.05h-6.58v26.92c0,2.76-2.24,5-5,5s-5-2.24-5-5s2.24-5,5-5c.66,0,1.3.13,1.88.36v-6.67c-.62-.08-1.25-.13-1.88-.13c-6.63,0-12,5.37-12,12s5.37,12,12,12s12-5.37,12-12v-13.4c2.2,1.64,4.91,2.61,7.85,2.61V14.37z"/>
+        </svg>
+      </a>
+
+      <a href="https://www.google.com" class="icon-button p-2 bg-pink-500 rounded-full shadow-md hover:bg-pink-600" target="_blank" rel="noopener noreferrer">
+        <svg
+          class="w-4 h-4 sm:w-6 sm:h-6 fill-white"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path d="M12 2C6.48 2 2 6.48 2 12c0 5.52 4.48 10 10 10s10-4.48 10-10c0-5.52-4.48-10-10-10zm4.6 6.7-2.94.25-1.3-2.73a7.9 7.9 0 0 1 4.24 2.48zm-4.6 9.6c-2.26 0-4.23-1.43-5.01-3.44h2.86l1.15 2.4 3.05-1.43 1.41 2.62c-1.29.66-2.75 1.18-4.46 1.18zm2.2-4.56-2.63-2.03-2.42-3.79 3.56.27 2.6 3.13 3.42.36-4.53 2.06z"/>
+          <path d="M18.77 13.18l-2.06-.21.97-1.99-.9-1.9 2.06.23 1.18-1.58.91 2 2.06.23-1.94 1.19 1.05 2-2.06-.22-1.27 1.56z"/>
+        </svg>
+      </a>
+
+      </div>
+
+        </div>
+
+       <script src="script.js"></script>
+</body>
+</html>
